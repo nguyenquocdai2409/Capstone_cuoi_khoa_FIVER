@@ -3,13 +3,21 @@ import imgLogin from "./imgLogin.jpg";
 import { Button, Checkbox, Form, Input } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-const onFinish = (values) => {
-  console.log("Success:", values);
-};
-const onFinishFailed = (errorInfo) => {
-  console.log("Failed:", errorInfo);
-};
+import { loginAction } from "../../redux/action/login";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+
 const Login = () => {
+  let dispatch = useDispatch();
+  let navigative = useNavigate();
+  const onFinish = (values) => {
+    console.log("Success:", values);
+    dispatch(loginAction(values, navigative));
+  };
+  const onFinishFailed = (errorInfo) => {
+    console.log("Failed:", errorInfo);
+  };
+
   return (
     <div>
       <div
@@ -117,4 +125,5 @@ const Login = () => {
     </div>
   );
 };
+
 export default Login;
