@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import imgLogin from "./imgLogin.jpg";
-import { Button, Checkbox, Form, Input } from "antd";
+import { Button, Checkbox, Form, Input, message } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-const onFinish = (values) => {
-  console.log("Success:", values);
-};
-const onFinishFailed = (errorInfo) => {
-  console.log("Failed:", errorInfo);
-};
+import { https } from "../../api/config";
+import { useNavigate } from "react-router-dom";
+
 const Login = () => {
+  let navigate = useNavigate();
+  const onFinish = (values) => {
+    https
+      .post("/api/auth/signin", values)
+      .then((res) => {
+        console.log(res);
+        message.success("login success!");
+        navigate("/");
+      })
+      .catch((err) => {
+        console.log(err);
+        message.error("login fail!");
+      });
+  };
+  const onFinishFailed = (errorInfo) => {
+    console.log("Failed:", errorInfo);
+  };
   return (
     <div>
       <div
@@ -58,7 +72,7 @@ const Login = () => {
                 style={{ fontSize: 30 }}
               >
                 <FontAwesomeIcon icon={faUser} />
-                <h2 className=""> Sign Up</h2>
+                <h2 className=""> Sign In</h2>
               </div>
               <Form.Item
                 label="Email"
@@ -103,6 +117,14 @@ const Login = () => {
                   span: 16,
                 }}
               >
+                <h2
+                  onClick={() => {
+                    navigate("/register");
+                  }}
+                  className="text-right text-blue-500 my-2 cursor-pointer font-medium"
+                >
+                  If you don't have account, please register!
+                </h2>
                 <Button
                   className="bg-red-500 text-white w-full"
                   htmlType="submit"

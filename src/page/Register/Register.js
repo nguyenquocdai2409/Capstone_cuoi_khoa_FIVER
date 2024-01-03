@@ -1,15 +1,30 @@
 import React from "react";
 import imgLogin from "./imgLogin.jpg";
-import { Button, Checkbox, Form, Input } from "antd";
+import { Button, Checkbox, Form, Input, message } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-const onFinish = (values) => {
-  console.log("Success:", values);
-};
-const onFinishFailed = (errorInfo) => {
-  console.log("Failed:", errorInfo);
-};
+import { https } from "../../api/config";
+import { useNavigate } from "react-router-dom";
+
 const Register = () => {
+  let navigate = useNavigate();
+  const onFinish = (values) => {
+    console.log("Success:", values);
+    https
+      .post("/api/auth/signup", values)
+      .then((res) => {
+        console.log(res);
+        message.success("register success!");
+        navigate('/login');
+      })
+      .catch((err) => {
+        console.log(err);
+        message.error("Email already exists!");
+      });
+  };
+  const onFinishFailed = (errorInfo) => {
+    console.log("Failed:", errorInfo);
+  };
   return (
     <div>
       <div
@@ -84,6 +99,18 @@ const Register = () => {
                   },
                 ]}
               >
+                <Input />
+              </Form.Item>
+              <Form.Item
+                label="Password"
+                name="password"
+                rules={[
+                  {
+                    required: true,
+                    message: "Please input your password!",
+                  },
+                ]}
+              >
                 <Input.Password />
               </Form.Item>
               <Form.Item
@@ -112,49 +139,15 @@ const Register = () => {
               </Form.Item>
 
               <Form.Item
-                label="Role"
-                name="role"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please input your role!",
-                  },
-                ]}
-              >
-                <Input />
-              </Form.Item>
-              <Form.Item
-                label="Skill"
-                name="skill"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please input your skill!",
-                  },
-                ]}
-              >
-                <Input />
-              </Form.Item>
-              <Form.Item
-                label="Certification"
-                name="certification"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please input your certification!",
-                  },
-                ]}
-              >
-                <Input />
-              </Form.Item>
-
-              <Form.Item
                 wrapperCol={{
                   offset: 8,
                   span: 16,
                 }}
               >
-                <Button className="bg-red-500 text-white w-full" htmlType="submit">
+                <Button
+                  className="bg-red-500 text-white w-full"
+                  htmlType="submit"
+                >
                   Sign in
                 </Button>
               </Form.Item>
