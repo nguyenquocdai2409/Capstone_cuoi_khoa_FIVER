@@ -1,7 +1,16 @@
-import React from 'react'
+import React from "react";
+import Header from "../../components/Header";
+import Banner from "./Banner";
+import Services from "./Services";
+import Support from "./Support";
 
 export default function Home() {
   return (
-    <div>Home</div>
-  )
+    <div className="pb-20">
+      <Header />
+      <Banner />
+      <Services />
+      <Support />
+    </div>
+  );
 }

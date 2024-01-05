@@ -3,43 +3,89 @@
 @tailwind utilities;
 
 .content {
-    /* color: #fff !important; */
-    background-color: #F1EFEF;
-    width: 70%;
-    margin: 0 auto 50px;
-    padding: 0;
-    height: 550px;
-    border-radius: 5px;
+  /* color: #fff !important; */
+  background-color: #f1efef;
+  width: 70%;
+  margin: 0 auto 50px;
+  padding: 0;
+  height: 550px;
+  border-radius: 5px;
 }
 .content1 {
-    width: 50%;
-    float: left;
-    background: url(./page/Login/imgLogin.jpg);
-    background-repeat: repeat;
-    background-size: cover;
-    height: 550px;
+  width: 50%;
+  float: left;
+  background: url(./page/Login/imgLogin.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  height: 550px;
 }
 .agileit1 {
-    padding: 225px 0 15px;
-    font-size: 40px;
-    font-weight: normal;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Monoton', cursive
+  padding: 225px 0 15px;
+  font-size: 40px;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Monoton", cursive;
 }
-.agileit2{
-    font-size: 15px;
-    font-weight: normal;
-    color: #fff;
-    text-align: center;
-    text-transform: capitalize;
+.agileit2 {
+  font-size: 15px;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
 }
 .content2 {
-    width: 50%;
-    float: left;
-    padding: 5px 0 0;
+  width: 50%;
+  float: left;
+  padding: 5px 0 0;
 }
 /*
 #202123
 */
+
+/* Thành đầu*/
+/* HEADER */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+.navbar_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* CAROUSEL */
+.banner_carousel {
+  position: relative;
+}
+.title_carousel {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) translateX(10%);
+}
+.search_carousel {
+  width: 200px;
+}
+/* SERVICE */
+.services {
+  position: relative;
+}
+.service_item {
+  position: relative;
+}
+.item_service {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+}
+/* SUPPORT */
+
+/* Thành cuối*/
