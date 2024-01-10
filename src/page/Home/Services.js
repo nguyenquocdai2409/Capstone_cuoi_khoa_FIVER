@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 export default function Services() {
   return (
     <div>
-      <div className="container py-20">
+      <div className="container service">
         <h1 className="text-3xl font-bold mb-5">Popular services</h1>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}

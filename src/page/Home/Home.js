@@ -1,8 +1,9 @@
 import React from "react";
-import Header from "../../components/Header";
+import Header from "./Header";
 import Banner from "./Banner";
 import Services from "./Services";
 import Support from "./Support";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Banner />
       <Services />
       <Support />
+      <Footer />
     </div>
   );
 }
