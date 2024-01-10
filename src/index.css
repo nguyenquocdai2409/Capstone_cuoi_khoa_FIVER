@@ -158,5 +158,28 @@
   height: 20px;
   width: 20px;
 }
-
+.footer .footer_title .footer_item {
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.footer .footer_title ul li a {
+  color: #74767e;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.footer .footer_icon {
+  color: #74767e;
+}
+.footer .footer_icon img {
+  color: #74767e;
+}
+.footer .footer_icon h2 {
+  color: #74767e;
+  font-size: 30px;
+  margin-right: 5px;
+  font-weight: 500;
+}
 /* Thành cuối*/

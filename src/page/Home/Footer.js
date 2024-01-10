@@ -4,154 +4,154 @@ export default function Footer() {
   return (
     <div>
       <hr className="my-5" />
-      <div className="container">
+      <div className="container footer">
         <div className="flex justify-between footer_title">
-          <div>
-            <h4>Categorles</h4>
-            <div>
+          <ul>
+            <h4 className="footer_item">Categorles</h4>
+            <li>
               <a href="#">Graphics & Design</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Digital Marketing</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Writing & Translation</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Video & Animation</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Music & Audio</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Fiverr Logo Maker</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Programming & Tech</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Data</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Business</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Lifestyle</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Photography</a>
-            </div>
+            </li>
 
-            <div>
+            <li>
               <a href="#">End-to-End Projects</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Sitemap</a>
-            </div>
-          </div>
-          <div>
-            <h4>About</h4>
-            <div>
+            </li>
+          </ul>
+          <ul>
+            <h4 className="footer_item">About</h4>
+            <li>
               <a href="#">Graphics & Design</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Careers</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Press & News</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Partnerships</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Privacy Policy</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Terms of Service</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Intellectual Property Claims</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Investor Relations</a>
-            </div>
-          </div>
-          <div>
-            <h4>Support and Education</h4>
-            <div>
+            </li>
+          </ul>
+          <ul>
+            <h4 className="footer_item">Support and Education</h4>
+            <li>
               <a href="#">Help & Support</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Trust & Safety</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Selling on Fiverr</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Buying on Fiverr</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Fiverr Guides</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">
                 <p>Fiverr Workspace</p>
                 <p>Invoice Software</p>
               </a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">
                 <p>Learn</p>
                 <p>Online Courses</p>
               </a>
-            </div>
-          </div>
-          <div>
-            <h1>Community</h1>
-            <div>
+            </li>
+          </ul>
+          <ul>
+            <h4 className="footer_item">Community</h4>
+            <li>
               <a href="#">Customer Success Stories</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Community Hub</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Forum</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Events</a>
-            </div>
-          </div>
-          <div>
-            <h4>Business Solutions</h4>
-            <div>
+            </li>
+          </ul>
+          <ul>
+            <h4 className="footer_item">Business Solutions</h4>
+            <li>
               <a href="#">About Business Solutions</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Fiverr Pro</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Fiverr Certified</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Fiverr Enterprise</a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">
                 <p>ClearVoice</p>
                 <p>Content Marketing</p>
               </a>
-            </div>
-            <div>
+            </li>
+            <li>
               <a href="#">Working Not Working</a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
-        <hr className=" my-5" />
+        <hr className="mt-3" />
         <div className="footer_icon">
-          <div className="flex justify-between">
-            <div>
+          <div className="flex justify-between items-center">
+            <div className="flex items-center">
               <h2>fiverr</h2>
-              <p>© Fiverr International Ltd. 2024</p>
+              <p> © Fiverr International Ltd. 2024</p>
             </div>
             <div className="flex justify-center ">
               <span>
