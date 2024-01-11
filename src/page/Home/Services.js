@@ -38,8 +38,8 @@ export default function Services() {
             <div className="service_item">
               <img src="../img/service3.png" alt="" />
               <div className="item_service">
-                <p>Add talent to Al</p>
-                <p className="text-2xl font-medium">Al Artists</p>
+                <p>Customize your site</p>
+                <p className="text-2xl font-medium">WordPress</p>
               </div>
             </div>
           </SwiperSlide>
@@ -47,8 +47,8 @@ export default function Services() {
             <div className="service_item">
               <img src="../img/service4.png" alt="" />
               <div className="item_service">
-                <p>Add talent to Al</p>
-                <p className="text-2xl font-medium">Al Artists</p>
+                <p>Share your message</p>
+                <p className="text-2xl font-medium">Voice Over</p>
               </div>
             </div>
           </SwiperSlide>
@@ -56,8 +56,8 @@ export default function Services() {
             <div className="service_item">
               <img src="../img/service5.png" alt="" />
               <div className="item_service">
-                <p>Add talent to Al</p>
-                <p className="text-2xl font-medium">Al Artists</p>
+                <p>Engage your audience</p>
+                <p className="text-2xl font-medium">Video Explainer</p>
               </div>
             </div>
           </SwiperSlide>
@@ -65,8 +65,8 @@ export default function Services() {
             <div className="service_item">
               <img src="../img/service6.png" alt="" />
               <div className="item_service">
-                <p>Add talent to Al</p>
-                <p className="text-2xl font-medium">Al Artists</p>
+                <p>Reach more customers</p>
+                <p className="text-2xl font-medium">Social Media</p>
               </div>
             </div>
           </SwiperSlide>
@@ -74,8 +74,8 @@ export default function Services() {
             <div className="service_item">
               <img src="../img/service7.png" alt="" />
               <div className="item_service">
-                <p>Add talent to Al</p>
-                <p className="text-2xl font-medium">Al Artists</p>
+                <p>Unlock growth online</p>
+                <p className="text-2xl font-medium">SEO</p>
               </div>
             </div>
           </SwiperSlide>
@@ -83,8 +83,8 @@ export default function Services() {
             <div className="service_item">
               <img src="../img/service8.png" alt="" />
               <div className="item_service">
-                <p>Add talent to Al</p>
-                <p className="text-2xl font-medium">Al Artists</p>
+                <p>Color your dreams</p>
+                <p className="text-2xl font-medium">Illustration</p>
               </div>
             </div>
           </SwiperSlide>
@@ -92,8 +92,8 @@ export default function Services() {
             <div className="service_item">
               <img src="../img/service9.png" alt="" />
               <div className="item_service">
-                <p>Add talent to Al</p>
-                <p className="text-2xl font-medium">Al Artists</p>
+                <p>Go global</p>
+                <p className="text-2xl font-medium">Translation</p>
               </div>
             </div>
           </SwiperSlide>
@@ -101,8 +101,8 @@ export default function Services() {
             <div className="service_item">
               <img src="../img/service10.png" alt="" />
               <div className="item_service">
-                <p>Add talent to Al</p>
-                <p className="text-2xl font-medium">Al Artists</p>
+                <p>Learn your business</p>
+                <p className="text-2xl font-medium">Data Entry</p>
               </div>
             </div>
           </SwiperSlide>
@@ -110,8 +110,8 @@ export default function Services() {
             <div className="service_item">
               <img src="../img/service1.png" alt="" />
               <div className="item_service">
-                <p>Add talent to Al</p>
-                <p className="text-2xl font-medium">Al Artists</p>
+                <p>Showcase your story</p>
+                <p className="text-2xl font-medium">Book Covers</p>
               </div>
             </div>
           </SwiperSlide>
