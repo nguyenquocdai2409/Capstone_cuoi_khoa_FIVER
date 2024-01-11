@@ -1,8 +1,21 @@
 import React from "react";
 import { CheckCircleOutlined } from "@ant-design/icons";
 import { Col, Row } from "antd";
+import { Carousel } from "antd";
+import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 
+const contentStyle = {
+  margin: 0,
+  height: "360px",
+  color: "#fff",
+  lineHeight: "30px",
+  textAlign: "center",
+  background: "white",
+};
 export default function Support() {
+  const onChange = (currentSlide) => {
+    console.log(currentSlide);
+  };
   return (
     <div className=" support">
       <div className="support_1">
@@ -94,32 +107,79 @@ export default function Support() {
         </div>
       </div>
 
-      <div className="support_2">
-        <div className="flex justify-between row container">
-          <div className="support_video col-6  pt-5">
-            <video width="640" height="360" controls>
-              {/* poster="../img/hinhanhvideo1.png" */}
-              <source
-                style={{
-                  width: "640",
-                  height: "360",
-                }}
-                src="../video/video2.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+      <div className="container support_2">
+        <Carousel
+          afterChange={onChange}
+          prevArrow={<LeftOutlined />}
+          nextArrow={<RightOutlined />}
+        >
+          <div>
+            <h3 style={contentStyle}>
+              <Row>
+                <Col span={12}>
+                  <div className="support_video  pt-5">
+                    <video width="640" height="360" controls>
+                      {/* poster="../img/hinhanhvideo1.png" */}
+                      <source
+                        style={{
+                          width: "640",
+                          height: "360",
+                        }}
+                        src="../video/video2.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </Col>
+                <Col span={12}>
+                  <div className="support_title_2 my-20">
+                    <h1>
+                      Kay Kim, Co-Founders <span className="">- rooted</span>
+                    </h1>
+                    <p>
+                      "When you want to create a business bigger than yourself,
+                      you need a lot of help. That's what fiverr does"
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+            </h3>
           </div>
-          <div className="support_title_2 col-6  ml-16">
-            <h1>
-              Kay Kim, Co-Founders <span className="">- rooted</span>
-            </h1>
-            <p>
-              "When you want to create a business bigger than yourself, you need
-              a lot of help. That's what fiverr does"
-            </p>
+          <div>
+            <h3 style={contentStyle}>
+              <Row>
+                <Col span={12}>
+                  <div className="support_video  pt-5">
+                    <video width="640" height="360" controls>
+                      {/* poster="../img/hinhanhvideo1.png" */}
+                      <source
+                        style={{
+                          width: "640",
+                          height: "360",
+                        }}
+                        src="../video/video2.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </Col>
+                <Col span={12}>
+                  <div className="support_title_2 my-20">
+                    <h1>
+                      Kay Kim, Co-Founders <span className="">- rooted</span>
+                    </h1>
+                    <p>
+                      "When you want to create a business bigger than yourself,
+                      you need a lot of help. That's what fiverr does"
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+            </h3>
           </div>
-        </div>
+        </Carousel>
       </div>
 
       <div className="support_3">
